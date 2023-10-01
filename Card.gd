@@ -11,7 +11,6 @@ var initialRotation = rotation;
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	_init()
-	tap()
 
 func _init():
 	pass
@@ -30,7 +29,6 @@ func _input(event):
 func setRotation():
 	initialRotation = rotation;
 	isTapped = !isTapped;
-	print(isTapped);
 
 func tap():
 	if (!isTapped):
