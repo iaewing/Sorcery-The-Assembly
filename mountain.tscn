@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgukpat44gvth"]
+
+[ext_resource type="PackedScene" uid="uid://bchqpx1fprp8b" path="res://card.tscn" id="1_7b3w6"]
+[ext_resource type="Texture2D" uid="uid://bvftph24lnn3a" path="res://assets/mountain.png" id="2_ujid7"]
+
+[node name="Mountain" instance=ExtResource("1_7b3w6")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_ujid7")
