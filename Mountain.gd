@@ -1,12 +1,5 @@
-extends MarginContainer
 
-const ROTATION_TIME = 0.2;
-
-var isTapped = false
-var health = null
-var attack = null
-var cardType = 'land'
-var initialRotation = rotation;
+extends 'res://Card.gd'
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,7 +7,11 @@ func _ready():
 	tap()
 
 func _init():
-	pass
+	isTapped = false
+	health = null
+	attack = null
+	cardType = 'land'
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
