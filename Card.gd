@@ -8,6 +8,8 @@ var attack = null
 var cardType = 'land'
 var initialRotation = rotation;
 
+signal card_tapped(card_type, data);
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	_init()
@@ -29,6 +31,7 @@ func _input(event):
 func setRotation():
 	initialRotation = rotation;
 	isTapped = !isTapped;
+	handleTap();
 
 func tap():
 	if (!isTapped):
@@ -41,3 +44,6 @@ func untap():
 		var tween = get_tree().create_tween();
 		tween.tween_property(self, "rotation", initialRotation + PI/2, ROTATION_TIME);
 		tween.finished.connect(setRotation);
+
+func handleTap():
+	pass

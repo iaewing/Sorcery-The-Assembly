@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhtw0kv4fgee7"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_wrai4"]
+
+[node name="Player" type="Polygon2D"]
+script = ExtResource("1_wrai4")

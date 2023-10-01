@@ -1,10 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://coyr0txt3vnfm"]
+[gd_scene load_steps=3 format=3 uid="uid://coyr0txt3vnfm"]
 
 [ext_resource type="PackedScene" uid="uid://dgukpat44gvth" path="res://mountain.tscn" id="1_a6iab"]
+[ext_resource type="PackedScene" uid="uid://bhtw0kv4fgee7" path="res://player.tscn" id="1_s3rms"]
 
 [node name="Main" type="Node2D"]
 
-[node name="Mountain" parent="." instance=ExtResource("1_a6iab")]
+[node name="Player" parent="." instance=ExtResource("1_s3rms")]
+
+[node name="Mountain" parent="Player" instance=ExtResource("1_a6iab")]
 offset_left = 445.0
 offset_top = 286.0
 offset_right = 695.0

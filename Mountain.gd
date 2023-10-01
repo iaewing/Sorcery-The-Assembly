@@ -13,3 +13,7 @@ func _init():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+func handleTap():
+	card_tapped.emit(self.cardType, ['red']);
+
