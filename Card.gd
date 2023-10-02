@@ -3,9 +3,9 @@ extends MarginContainer
 const ROTATION_TIME = 0.2;
 
 var isTapped = false
-var health = null
-var attack = null
-var cardType = 'land'
+var health;
+var attack;
+var cardType: Array[String];
 var initialRotation = rotation;
 
 signal card_tapped(card_type, data);
