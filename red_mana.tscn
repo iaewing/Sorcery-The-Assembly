@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d07gsr4oxuhow"]
+
+[ext_resource type="Texture2D" uid="uid://d1dvqs5ep4wp0" path="res://assets/fire.png" id="1_mjvac"]
+
+[node name="RedMana" type="Sprite2D"]
+texture = ExtResource("1_mjvac")
